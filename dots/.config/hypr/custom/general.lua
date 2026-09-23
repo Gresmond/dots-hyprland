@@ -1,7 +1,7 @@
 -- Monitor
 hl.monitor({
     output = "DP-1",
-    mode = "2560x1440@300",
+    mode = "2560x1440@240",
     position = "0x0",
     scale = 1,
     bitdepth = 10,
@@ -11,6 +11,9 @@ hl.monitor({
 
 -- Input
 hl.config({
+	render = {
+		direct_scanout = 2,
+	},
     input = {
         accel_profile = "flat",
     },
@@ -40,8 +43,8 @@ hl.config({
         rounding = 18,
 
         -- Global defaults
-        active_opacity = 0.95,
-        inactive_opacity = 0.85,
+        active_opacity = 1,
+        inactive_opacity = 0.8,
         fullscreen_opacity = 1.0,
 
         -- Frosted Acrylic Blur
