@@ -9,6 +9,12 @@ hl.monitor({
     icc = "/home/nicholas/.local/share/icc/msi_mag_274qpf_x30mv.icm",
 })
 
+hl.config({
+    misc = {
+        vrr = 2
+    }
+})
+
 -- Input
 hl.config({
 	render = {
